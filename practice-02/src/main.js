@@ -163,3 +163,22 @@ printStats("Итоговая сводка варианта", variantState);
 
 console.log("\nИсходный variantTasks не изменён:");
 printTasks(variantTasks);
+
+//КР1, задание 2
+console.log("\nЗадание 2: getPendingTasks");
+console.log("demoTasks:", demoTasks.map((t) => t.id));
+console.log("getPendingTasks(demoTasks):", getPendingTasks(demoTasks).map((t) => t.id));
+console.log("getPendingTasks([]):", getPendingTasks([]));
+console.log("demoTasks после проверки:", demoTasks.map((t) => t.id));
+
+//КР1, задание 3
+console.log("\nЗадание 3: setTaskCompleted");
+const r1 = setTaskCompleted(demoTasks, 4, true);
+console.log("ok:", r1.ok);
+console.log("в новом массиве id=4:", r1.tasks.find((t) => t.id === 4).completed);
+console.log("в исходном demoTasks id=4:", demoTasks.find((t) => t.id === 4).completed);
+
+const r2 = setTaskCompleted(demoTasks, 777, true);
+console.log("ok:", r2.ok);
+console.log("error:", r2.error);
+console.log("demoTasks после отказа:", demoTasks.map((t) => t.id));
