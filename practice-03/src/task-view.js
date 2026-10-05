@@ -1,8 +1,5 @@
 import { getTaskStats } from "./task-service.js";
 
-// Здесь создаётся DOM, но не изменяется состояние приложения.
-// Названия и подписи выводятся через textContent.
-
 const PRIORITY_LABELS = {
   low: "Низкий",
   medium: "Средний",

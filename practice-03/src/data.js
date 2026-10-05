@@ -1,5 +1,3 @@
-// Общий контрольный набор. Для варианта ниже — отдельный массив.
-// Идентификатор задачи не совпадает с её индексом в массиве.
 export const demoTasks = [
   { id: 1, title: "Изучить функции", completed: true, priority: "medium" },
   { id: 4, title: "Подготовить модель задач", completed: false, priority: "high" },
@@ -7,8 +5,7 @@ export const demoTasks = [
   { id: 10, title: "Оформить README", completed: true, priority: "medium" },
 ];
 
-// Вариант 2. Тема: «Подготовка выступления». K = 1 — выполнена только первая задача.
-// Идентификаторы строго 11, 23, 37, 41, 58, 64 в указанном порядке.
+// Вариант 2
 export const variantNumber = 2;
 
 export const variantTasks = [

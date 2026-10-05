@@ -24,7 +24,7 @@ const limitIsValid =
   dailyLimit >= 1 &&
   dailyLimit <= 1000;
 
-// ==== ОСНОВНАЯ ЛОГИКА ====
+//Основа
 if (!totalIsValid) {
   console.log("Ошибка: totalTasks должно быть целым числом от 0 до 1000");
 } else if (!completedIsValid) {

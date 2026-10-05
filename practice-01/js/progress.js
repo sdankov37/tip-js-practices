@@ -1,10 +1,10 @@
 "use strict";
 
-// ==== ДАННЫЕ ВАРИАНТА ====
-const totalTasks = 12;
-const completedTasks = 5;
+//Вар
+const totalTasks = 5;
+const completedTasks = 6;
 
-// ==== ПРОВЕРКА ДОПУСТИМОСТИ ====
+//Проверка
 const totalIsValid =
   Number.isFinite(totalTasks) &&
   Number.isInteger(totalTasks) &&
@@ -17,7 +17,7 @@ const completedIsValid =
   completedTasks >= 0 &&
   completedTasks <= totalTasks;
 
-// ==== ОСНОВНАЯ ЛОГИКА ====
+//Основа
 if (!totalIsValid) {
   console.log("Ошибка: totalTasks должно быть целым числом от 0 до 1000");
 } else if (!completedIsValid) {

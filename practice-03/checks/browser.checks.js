@@ -1,5 +1,3 @@
-// Готовые проверки ПР3. Открывать checks.html через локальный сервер.
-// Реализаций прикладных функций здесь нет. Все DOM-проверки выполняются в браузере.
 import { getVisibleTasks } from "../src/task-selectors.js";
 import { createTaskElement, renderTaskList, renderSummary, renderEmptyState } from "../src/task-view.js";
 

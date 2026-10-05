@@ -1,7 +1,3 @@
-// Прикладной модуль работы с задачами.
-// Не содержит console.log, не импортирует demoTasks, не хранит глобального
-// изменяемого списка. DOM-обращений здесь нет.
-
 const ALLOWED_PRIORITIES = ["low", "medium", "high"];
 
 function isValidId(id) {

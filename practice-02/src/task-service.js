@@ -1,15 +1,6 @@
-// Прикладной модуль работы с задачами.
-// Не содержит console.log, не импортирует demoTasks и не хранит глобального
-// изменяемого списка. Все операции работают только с переданным массивом
-// и не изменяют его.
-//
-// Для предусмотренных ошибок возвращается { ok: false, error: "..." }.
-
 const ALLOWED_PRIORITIES = ["low", "medium", "high"];
 
-/* ------------------------------------------------------------------ */
-/* Внутренние проверки                                                 */
-/* ------------------------------------------------------------------ */
+//Проверки
 
 function isValidId(id) {
   return typeof id === "number" && Number.isSafeInteger(id) && id > 0;
@@ -37,9 +28,7 @@ function isValidPriority(priority) {
   return typeof priority === "string" && ALLOWED_PRIORITIES.includes(priority);
 }
 
-/* ------------------------------------------------------------------ */
-/* Задание 2. Создание задачи                                          */
-/* ------------------------------------------------------------------ */
+//Задание 2
 
 export function createTask(id, title, priority = "medium") {
   if (!isValidId(id)) {
@@ -66,9 +55,7 @@ export function createTask(id, title, priority = "medium") {
   };
 }
 
-/* ------------------------------------------------------------------ */
-/* Задание 3. Чтение списка и расчёт сводки                            */
-/* ------------------------------------------------------------------ */
+//Задание 3
 
 export function findTaskById(tasks, id) {
   return tasks.find((task) => task.id === id);
@@ -98,9 +85,7 @@ export function getTaskStats(tasks) {
   return { total, completed, pending, progress };
 }
 
-/* ------------------------------------------------------------------ */
-/* Задание 4. Добавление, изменение, удаление                          */
-/* ------------------------------------------------------------------ */
+//Задание 4
 
 export function addTask(tasks, id, title, priority = "medium") {
   if (!isValidId(id)) {
