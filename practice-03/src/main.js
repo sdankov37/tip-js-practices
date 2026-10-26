@@ -36,8 +36,8 @@ function renderApp() {
   }
 }
 
-function handleTaskListClick(event) {
-  if (!(event.target instanceof Element)) return;
+  function handleTaskListClick(event) {
+    if (!(event.target instanceof Element)) return;
 
   const button = event.target.closest("button[data-action]");
   if (!button || !elements.list.contains(button)) return;
